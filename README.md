@@ -1,59 +1,89 @@
-# 🏡 Housing Price Analysis — Python, Pandas, scikit-learn
+# 🏡 Housing Price Analysis — R Statistics, EDA & Regression Modelling
 
-A full exploratory data analysis and predictive model built using the Kaggle housing dataset. Includes data cleaning, visualisation, feature engineering, and a regression model with performance evaluation.
-
----
-
-## 🔧 Tools & Libraries  
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib / Seaborn  
-- scikit-learn  
-- Jupyter Notebook  
+This project analyses the factors affecting housing prices using a dataset of 545 properties.  
+The analysis includes exploratory data analysis, feature engineering, and linear regression modelling (with and without log transformation).  
+A full report and R code are included.
 
 ---
 
-## 📊 Project Features  
-- Data cleaning + handling missing values  
-- Exploratory Data Analysis (EDA)  
-- Visualisations: distributions, correlations, scatter plots  
-- Train/test split  
-- Linear Regression model  
-- RMSE evaluation  
-- 1-page analytical report  
+## 📁 Project Structure
 
----
-## 📁 Repository Structure
-
-housing-price-analysis
-│── data/
-│── notebooks/
-│     └── housing_analysis.ipynb
-│── report/
-│     └── housing_report.pdf
-│── assets/
-│     ├── eda_plots.png
-│     └── correlations.png
-└── README.md
 
 ---
 
-## ▶️ How to Run  
-1. Clone this repo  
-2. Install requirements:  
-pip install -r requirements.txt
+## 🔧 Tools & Libraries
 
-
-3. Open Jupyter Notebook  
-4. Run `housing_analysis.ipynb`
-
----
-
-## 📸 Screenshots  
-(Add your EDA graphs here later.)
+- R  
+- dplyr  
+- ggplot2  
+- MASS  
+- scales  
 
 ---
 
-## CV Bullet  
-**Housing Price Analysis (2025)** — Python, Pandas, scikit-learn: built a regression model, performed EDA, and produced a 1-page analytical report.
+## 📊 Key Analysis Steps
+
+### **1. Data Understanding**
+- 545 rows, 13 columns  
+- Mix of numeric + categorical features  
+- No missing values  
+- No duplicates  
+- Skewed target variable (price)
+
+### **2. EDA**
+Included visualisations:
+- Histogram of price  
+- Boxplots by:
+  - furnishing status  
+  - air conditioning  
+  - preferred area  
+- Bar charts for:
+  - average price by bedrooms  
+  - average price by stories  
+
+### **3. Modelling**
+Two models were built:
+
+#### **Model 1 — Linear Regression**
+- Adjusted R²: 0.6127  
+- Significant predictors:  
+  bathrooms, A/C, preferred area, parking, hot water heating, etc.
+
+#### **Model 2 — Log-Transformed Regression**
+- Adjusted R²: 0.6279  
+- Better residual behaviour  
+- Coefficients represent % change in price  
+
+Example:  
+- Air conditioning → +20.3%  
+- Bathroom → +18.4%  
+- Preferred area → +16.5%  
+- Unfurnished → –12.3%
+
+### **4. Diagnostics**
+- Check residual vs fitted  
+- Q-Q plot  
+- Leverage & influence  
+
+---
+
+## 📄 Files Included
+
+- `housing_analysis.R` — full analysis code  
+- `housing_report.pdf` — full written report with visuals  
+- Plots in `/assets/`  
+- Dataset in `/data/`
+
+---
+
+## 📈 Summary of Findings
+
+- Homes with **air conditioning, bathrooms, preferred area, parking** have significantly higher prices.  
+- The **log-transformed model** improves model assumptions and interpretability.  
+- About **63%** of price variation is explained by the model.  
+
+---
+
+## CV Bullet
+
+**Housing Price Analysis (2025)** — Conducted full EDA and built multiple regression models (R). Improved model fit through log transformation and extracted key drivers of price (+20.3% for A/C, +18.4% per bathroom). Delivered full professional report and reproducible code.
