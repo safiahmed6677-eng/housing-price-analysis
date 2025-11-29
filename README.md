@@ -24,8 +24,8 @@ A full exploratory data analysis and predictive model built using the Kaggle hou
 - 1-page analytical report  
 
 ---
+## 📁 Repository Structure
 
-## 📁 Repository Structure  
 housing-price-analysis
 │── data/
 │── notebooks/
@@ -36,6 +36,7 @@ housing-price-analysis
 │     ├── eda_plots.png
 │     └── correlations.png
 └── README.md
+
 ---
 
 ## ▶️ How to Run  
