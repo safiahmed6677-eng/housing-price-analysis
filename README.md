@@ -1,7 +1,9 @@
 # 🏡 Housing Price Analysis — R Statistics, EDA & Regression Modelling
 
 This project analyses the factors affecting housing prices using a dataset of 545 properties.  
+
 The analysis includes exploratory data analysis, feature engineering, and linear regression modelling (with and without log transformation).  
+
 A full report and R code are included.
 
 ---
