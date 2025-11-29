@@ -1,7 +1,6 @@
 # 🏡 Housing Price Analysis — Python, Pandas, scikit-learn
 
-A full exploratory data analysis and predictive model built using the Kaggle housing dataset.  
-Includes data cleaning, visualisation, feature engineering, and a regression model with performance evaluation.
+A full exploratory data analysis and predictive model built using the Kaggle housing dataset. Includes data cleaning, visualisation, feature engineering, and a regression model with performance evaluation.
 
 ---
 
