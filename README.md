@@ -29,14 +29,13 @@ A full exploratory data analysis and predictive model built using the Kaggle hou
 housing-price-analysis
 │── data/
 │── notebooks/
-│ └── housing_analysis.ipynb
+│     └── housing_analysis.ipynb
 │── report/
-│ └── housing_report.pdf
+│     └── housing_report.pdf
 │── assets/
-│ ├── eda_plots.png
-│ └── correlations.png
+│     ├── eda_plots.png
+│     └── correlations.png
 └── README.md
-
 ---
 
 ## ▶️ How to Run  
