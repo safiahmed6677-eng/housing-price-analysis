@@ -68,7 +68,7 @@ Example:
 - Leverage & influence  
 
 ---
-^^^^^^
+
 ## 📄 Files Included
 
 - `housing_analysis.R` — full analysis code  
